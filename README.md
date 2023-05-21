@@ -61,8 +61,19 @@ Prerrequisitos:
  1. Ghost-CLI version: 1.24.0
  2. NodeJS version: v14.21.1
  3. Kraken: última versión
+
+### Instrucción Datos Aleatorios
  
 En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios, se encuentran seis archivos, cada uno con los escenarios descritos en la tabla anterior. Para ejecutar cada uno de los escenarios es necesario copiar uno de estos archivos y copiartlo en el archivo my_first.feature que se encuentra en la ruta Pruebas e2e Kraken Aleatorios/features. Por último ir por consola a la carpeta raíz del proyecto y ejecutar el comando npx kraken-node run.
+
+### Instrucción Datos Pseudo Aleatorios y A-piori
+
+## Estrategias usadas
+
+### Estrategia Datos Aleatorios
+
+### Estrategia Datos Pseudo Aleatorios y A-piori
+
 
 
 
