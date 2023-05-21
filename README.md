@@ -64,7 +64,7 @@ Prerrequisitos:
 
 ### Instrucción Datos Aleatorios
  
-En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios, se encuentran seis archivos, cada uno con los escenarios descritos en la tabla anterior. Para ejecutar cada uno de los escenarios es necesario copiar uno de estos archivos y copiartlo en el archivo my_first.feature que se encuentra en la ruta Pruebas e2e Kraken Aleatorios/features. Por último ir por consola a la carpeta raíz del proyecto y ejecutar el comando npx kraken-node run.
+En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios, se encuentran seis archivos, cada uno con los escenarios descritos en la tabla anterior. Para ejecutar cada uno de los escenarios es necesario copiar uno de estos archivos y pegar el contendio en el archivo my_first.feature que se encuentra en la ruta Pruebas e2e Kraken Aleatorios/features. Por último ir por consola a la carpeta raíz del proyecto y ejecutar el comando npx kraken-node run.
 
 ### Instrucción Datos Pseudo Aleatorios y A-piori
 
