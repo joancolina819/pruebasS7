@@ -2,7 +2,7 @@ Feature: Cambiar informacion personal
 
 @user1 @web
 Scenario: Como primer usuario quiero actualizar el nombre del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
@@ -22,7 +22,7 @@ Scenario: Como primer usuario quiero actualizar el nombre del usuario
 
 @user2 @web
 Scenario: Como primer usuario quiero actualizar el nombre y correo del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
@@ -44,7 +44,7 @@ Scenario: Como primer usuario quiero actualizar el nombre y correo del usuario
 
 @user3 @web
 Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
@@ -68,7 +68,7 @@ Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usu
 
 @user4 @web
 Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
@@ -92,7 +92,7 @@ Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usu
 
 @user5 @web
 Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
@@ -110,13 +110,11 @@ Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usu
   And I wait for 2 seconds
   And I enter new slug "<slug192>"
   And I wait for 2 seconds
-  And I click save
-  And I wait for 2 seconds
 
 
 @user6 @web
 Scenario: Como primer usuario quiero actualizar el nombre, correo y slug del usuario
-  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  Given I navigate to page "http://localhost:2369/ghost/#/signin"
   And I wait for 5 seconds
   When I enter email "<USERNAME1>"
   And I wait for 2 seconds
