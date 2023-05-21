@@ -26,7 +26,7 @@ Se realizan pruebas E2E sobre la aplicación Ghost con dos tipos de herramientas
 | Crear página con título con 251  caracteres | &#9745;| | |
 | Cambiar perfil nombre | &#9745;| | &#9745;|
 | Cambiar perfil nombre y slug | &#9745;| | &#9745;|
-| Cambiar perfil nombre, slug y correo | &#9745;| | &#9745;|
+| Cambiar perfil nombre, slug y correo | &#9745;| &#9745;| &#9745;|
 | Poner una url diferente en el website del perfil en el input de website | | | &#9745;|
 | Poner una url diferente en el perfil en el input de facebook | | | &#9745;|
 | Poner una url diferente en el perfil en el input de twitter | | | &#9745;|
