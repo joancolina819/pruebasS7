@@ -55,4 +55,15 @@ Se realizan pruebas E2E sobre la aplicación Ghost con dos tipos de herramientas
 | Crear tag con título, meta title y descripción meta | | | :white_check_mark:|
 | Crear nuevo miembro con usuario y correo | | | :white_check_mark:|
 
+## Instrucciones de ejecución Kraken
+
+Prerrequisitos:
+ 1. Ghost-CLI version: 1.24.0
+ 2. NodeJS version: v14.21.1
+ 3. Kraken: última versión
+ 
+ En la carpeta Escenarios se encuentran los archivos .feature donde cada archivo corresponde a una de las funcionalidades probadas.
+
+ Para ejecutar cada uno de los escenarios es necesario copiar el contenido .feature a probar y pegarlo en el archivo my_first.feature. Luego en el archivo properties.json modificar las propiedades de USERNAME1 y PASSWORD1 con un usuario y password válidos de la aplicación ghost, igualmente la propiedad USERNAME1UPDATE modificarlo con el mismo valor de USERNAME1. Finalmente ir por consola a la carpeta raíz, ejecutar el comando `npm install` y una vez se instalen los módulos, ejecutar `npx kraken-node run o ./node_modules/kraken-node/bin/kraken-node run`.
+
 
