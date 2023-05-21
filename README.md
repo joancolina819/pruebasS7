@@ -12,48 +12,47 @@ Se realizan pruebas E2E sobre la aplicación Ghost con dos tipos de herramientas
 
 | Escenario | Datos a-priori | Datos (pseudo) aleatorio dinámico | Datos aleatorios | 
 | --- | --- | --- | --- |
-| Iniciar Sesión con email incorrecto | &#9745;| | &#9745;|
-| Iniciar sesión con contraseña incorrecta | &#9745;| | &#9745;|
-| Post con solo título | &#9745;| | &#9745;|
-| Post con título de 250 caracteres | &#9745;| | |
-| Post con título de 252 caracteres | &#9745;| | |
-| Post con solo body | &#9745;| | &#9745;|
-| Post con body y título | &#9745;| | &#9745;|
-| Pagina con solo titulo | &#9745;| | &#9745;|
-| Pagina con solo body | &#9745;| | &#9745;|
-| Página con título y body | &#9745;| | &#9745;|
-| Crear página con título con 252  caracteres | &#9745;| | |
-| Crear página con título con 251  caracteres | &#9745;| | |
-| Cambiar perfil nombre | &#9745;| | &#9745;|
-| Cambiar perfil nombre y slug | &#9745;| | &#9745;|
-| Cambiar perfil nombre, slug y correo | &#9745;| &#9745;| &#9745;|
-| Poner una url diferente en el website del perfil en el input de website | | | &#9745;|
-| Poner una url diferente en el perfil en el input de facebook | | | &#9745;|
-| Poner una url diferente en el perfil en el input de twitter | | | &#9745;|
-| Cambiar slug en nombre de perfil | &#9745;| | &#9745;|
-| Actualizar el nombre y location | | | &#9745;|
-| Actualizar nombre y website | | | &#9745;|
-| Actualizar el nombre y facebook | | | &#9745;|
-| Actualizar el nombre y twitter | | | &#9745;|
-| Actualizar el nombre y bio | | | &#9745;|
-| Actualizar el perfil completo | | | &#9745;|
-| Crear correo en el perfil con formato de mail incorrecto | | | &#9745;|
-| Slug con 192 caracteres | &#9745;| | |
-| Slug con 191 caracteres | &#9745;| | |
-| Crear Tag solo título | &#9745;| | &#9745;|
-| Crear Tag con nombre incorrecto | &#9745;| | |
-| Crear Tag título y descripción | &#9745;| | &#9745;|
-| Crear Tag con color incorrecto | &#9745;| | &#9745;|
-| Crear Tag con título, descripción y toda la información de Meta | &#9745;| | &#9745;|
-| Crear Tag con url meta en formato incorrecto | | | &#9745;|
-| Crear Tag con 501 caracteres | &#9745;| | |
-| Crear Tag con 499 caracteres | &#9745;| | |
-| Crear tag título, color y descripción | &#9745;| | &#9745;|
-| Crear tag con título y meta title | | | &#9745;|
-| Crear tag con 190 caracteres | &#9745;| | |
-| Crear tag con 191 caracteres | &#9745;| | |
-| Crear tag con título, meta title y descripción meta | | | &#9745;|
-| Crear nuevo miembro con usuario y correo | | | &#9745;|
-
+| Iniciar Sesión con email incorrecto | :white_check_mark:| | :white_check_mark:|
+| Iniciar sesión con contraseña incorrecta | :white_check_mark:| | :white_check_mark:|
+| Post con solo título | :white_check_mark:| | :white_check_mark:|
+| Post con título de 250 caracteres | :white_check_mark:| | |
+| Post con título de 252 caracteres | :white_check_mark:| | |
+| Post con solo body | :white_check_mark:| | :white_check_mark:|
+| Post con body y título | :white_check_mark:| | :white_check_mark:|
+| Pagina con solo titulo | :white_check_mark:| | :white_check_mark:|
+| Pagina con solo body | :white_check_mark:| | :white_check_mark:|
+| Página con título y body | :white_check_mark:| | :white_check_mark:|
+| Crear página con título con 252  caracteres | :white_check_mark:| | |
+| Crear página con título con 251  caracteres | :white_check_mark:| | |
+| Cambiar perfil nombre | :white_check_mark:| | :white_check_mark:|
+| Cambiar perfil nombre y slug | :white_check_mark:| | :white_check_mark:|
+| Cambiar perfil nombre, slug y correo | :white_check_mark:| :white_check_mark:| :white_check_mark:|
+| Poner una url diferente en el website del perfil en el input de website | | | :white_check_mark:|
+| Poner una url diferente en el perfil en el input de facebook | | | :white_check_mark:|
+| Poner una url diferente en el perfil en el input de twitter | | | :white_check_mark:|
+| Cambiar slug en nombre de perfil | :white_check_mark:| | :white_check_mark:|
+| Actualizar el nombre y location | | | :white_check_mark:|
+| Actualizar nombre y website | | | :white_check_mark:|
+| Actualizar el nombre y facebook | | | :white_check_mark:|
+| Actualizar el nombre y twitter | | | :white_check_mark:|
+| Actualizar el nombre y bio | | | :white_check_mark:|
+| Actualizar el perfil completo | | | :white_check_mark:|
+| Crear correo en el perfil con formato de mail incorrecto | | | :white_check_mark:|
+| Slug con 192 caracteres | :white_check_mark:| | |
+| Slug con 191 caracteres | :white_check_mark:| | |
+| Crear Tag solo título | :white_check_mark:| | :white_check_mark:|
+| Crear Tag con nombre incorrecto | :white_check_mark:| | |
+| Crear Tag título y descripción | :white_check_mark:| | :white_check_mark:|
+| Crear Tag con color incorrecto | :white_check_mark:| | :white_check_mark:|
+| Crear Tag con título, descripción y toda la información de Meta | :white_check_mark:| | :white_check_mark:|
+| Crear Tag con url meta en formato incorrecto | | | :white_check_mark:|
+| Crear Tag con 501 caracteres | :white_check_mark:| | |
+| Crear Tag con 499 caracteres | :white_check_mark:| | |
+| Crear tag título, color y descripción | :white_check_mark:| | :white_check_mark:|
+| Crear tag con título y meta title | | | :white_check_mark:|
+| Crear tag con 190 caracteres | :white_check_mark:| | |
+| Crear tag con 191 caracteres | :white_check_mark:| | |
+| Crear tag con título, meta title y descripción meta | | | :white_check_mark:|
+| Crear nuevo miembro con usuario y correo | | | :white_check_mark:|
 
 
