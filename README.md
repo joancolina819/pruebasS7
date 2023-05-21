@@ -8,7 +8,7 @@ Pruebas E2E Kraken Cypress Grupo 28
 
 Se realizan pruebas E2E sobre la aplicación Ghost con dos tipos de herramientas, Kraken y Cypress con (i) pool de datos a-priori, (ii) pool de datos (pseudo) aleatorio dinámico y (iii) escenario aleatorio.  Se generan 120 escenarios, se detallan las incidencias obtenidas, el resultado de las pruebas, código fuente con el que se ejecutaron las pruebas y  estrategias usadas en los escenarios de pruebas.
 
-## Escenarios ejecutados en Kraken
+## Escenarios ejecutados en Kraken con diferentes estrategias
 
 | Escenario | Datos a-priori | Datos (pseudo) aleatorio dinámico | Datos aleatorios | 
 | --- | --- | --- | --- |
