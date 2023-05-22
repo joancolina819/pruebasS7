@@ -8,6 +8,8 @@ Pruebas E2E Kraken Cypress Grupo 28
 
 Se realizan pruebas E2E sobre la aplicación Ghost con dos tipos de herramientas, Kraken y Cypress con (i) pool de datos a-priori, (ii) pool de datos (pseudo) aleatorio dinámico y (iii) escenario aleatorio.  Se generan 120 escenarios, se detallan las incidencias obtenidas, el resultado de las pruebas, código fuente con el que se ejecutaron las pruebas y  estrategias usadas en los escenarios de pruebas.
 
+## Pruebas en kraken
+
 ## Escenarios ejecutados en Kraken con diferentes estrategias
 
 | Escenario | Datos a-priori | Datos (pseudo) aleatorio dinámico | Datos aleatorios | 
@@ -115,9 +117,13 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 
 ### Estrategia Datos A-piori
 
-## Reporte de Incidencias
-
-
+Para la generación del data pool de datos a-priori se utilizó la librería @faker-js/faker para crear datos de forma aleatoria de forma previa a la ejecución de las pruebas. Con esta librería se crearon cadenas de caractéres de tipo email, lastName, fullName e igualmente se configuraron para limitar el número de caractéres generados con el objetivo de realizar pruebas de frontera en distintos campos de la aplicación de ghost. Una vez se generaban esos datos se crea un archivo y se ejecutan las pruebas con los datos generados. A continuación se da un ejemplo del tipo de datos a-priori que se creaban para ejecutar las pruebas. 
+```
+ "POSTTITLE": faker.person.fullName(),
+    "POSTTITLE252": faker.string.fromCharacters('c', 252),
+    "POSTTITLE250": faker.string.fromCharacters('c', 250),
+    "BODYTITLE": faker.person.fullName()
+```
 ## Pruebas en cypress
 
 | Escenario | Datos a-priori | Datos (pseudo) aleatorio dinámico | Datos aleatorios | 
@@ -193,4 +199,4 @@ Se utilizo la herramienta online Mockaroo que permite congifurar un data pool en
 
 Esto se integro mediante un archivo Json que se guardo en la carpeta fixture, desde las pruebas cypress se toma el json, se lee, y leatoriamente se toma un registr, guardando en variables globales los datos y asi utilizar estos datos en cada prueba.  
 
-
+## Reporte de Incidencias
