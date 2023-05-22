@@ -72,6 +72,29 @@ En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios
 
 ### Estrategia Datos Aleatorios
 
+Para la definición de los data pools hicimos uso de la librería @faker-js/faker, la cual genera cadenas de caractéres aleatorios y soporta los siguientes tipos.
+
+* Name
+* Number
+* Email
+* String
+* String Date
+* URL
+
+Con esta librería que ofrece Kraken nos permite generar datos en el momento de la ejecución de la prueba, de esta manera en los dferentes escenarios generabamos cadenas de tipo usuario, correo, descripciones, etc. En los archivos .feature donde ejecutabamos el patron Given, When, Then, incluíamos esas variables para genrar el contenido de esta manera.
+```
+@user1 @web
+Scenario: Crear nuevo usuario con nombre y correo aleatorio
+  Given I navigate to page "http://localhost:2368/ghost/#/signin"
+  And I wait for 5 seconds
+  And I enter name new "$name_1"
+  And I wait for 2 seconds
+  And I enter email new "$email_1"
+  And I wait for 2 seconds
+  Then I click save member
+```
+
+
 ### Estrategia Datos Pseudo Aleatorios
 
 ### Estrategia Datos A-piori
