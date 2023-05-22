@@ -115,7 +115,7 @@ When('I enter new correo seudo {kraken-string}', async function(text) {
 ```
 De esta manera controlamos que el correo final esté relacionado con el nombre y correo que se ejecutaron con datos aleatorios. 
 
-### Estrategia Datos A-piori
+### Estrategia Datos A-priori
 
 Para la generación del data pool de datos a-priori se utilizó la librería @faker-js/faker para crear datos de forma aleatoria de forma previa a la ejecución de las pruebas. Con esta librería se crearon cadenas de caractéres de tipo email, lastName, fullName e igualmente se configuraron para limitar el número de caractéres generados con el objetivo de realizar pruebas de frontera en distintos campos de la aplicación de ghost. Una vez se generaban esos datos se crea un archivo y se ejecutan las pruebas con los datos generados. A continuación se da un ejemplo del tipo de datos a-priori que se creaban para ejecutar las pruebas. 
 ```
@@ -193,7 +193,7 @@ Para la definición de los data pools se uso la librería @faker-js/faker, la cu
 
 Con esta librería se generan datos en el momento de la ejecución de la prueba, de esta manera en los diferentes escenarios se generan cadenas de tipo texton numero, url, entre otras que permite ingresar datos en los escenarios de usuario, correo, descripciones, etc.
 
-### Estrategia Datos A-piori
+### Estrategia Datos A-priori
 
 Se utilizo la herramienta online Mockaroo que permite congifurar un data pool en formato json con las caracteristicas requeridas para probar el sistema, como un campo de caracteres especiales y los tamaños de los datos, ademas permite duplicar o llamar los datos de otras columnas para concatenarlas, ademas tiene una interfaz sencilla de manejar, y una generacion de datos por IA que agiliza el trabajo de tipado de datos. en su mayoria se usaron de tipo word, nombres, contraseñas y especial.
 
