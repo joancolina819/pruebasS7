@@ -131,7 +131,7 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 |crear pages, solo con body sin titulo | :white_check_mark:| | :white_check_mark:|
 |crear pages, solo con body que contenga caracteres especiales sin titulo | :white_check_mark:| | |
 |crear pages, con titulo y cuerpo que contenga caracteres especiales | :white_check_mark:| | |
-|crear pages, solo con titulo mayor a 300 caracteres | :white_check_mark:| | |
+|crear pages, solo con titulo mayor a 300 caracteres | :white_check_mark:| |:white_check_mark: |
 |crear pages, body y titulo | :white_check_mark:| | :white_check_mark:|
 |Editar Pages, a titulo de 300 caracteres | :white_check_mark:| | :white_check_mark:|
 |Editar perfil, error de nombre largo | :white_check_mark:| | :white_check_mark:|
@@ -152,17 +152,17 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 |Editar miembro, ingresando nombre con mas de 300 caracteres| :white_check_mark:| | :white_check_mark:|
 |Editar miembro, ingresando correo invalido | :white_check_mark:| | :white_check_mark:|
 |Editar miembro, ingresando nota larga| :white_check_mark:| | :white_check_mark:|
-|Crear post, solo con titulo| | | :white_check_mark:|
-|Crear post, solo con titulo mayor a 191 caracteres| | | :white_check_mark:|
-|Crear post, error al crear solo con  titulo, slug y descripcion | | | :white_check_mark:|
-|Crear post, con hexadecimal invalido | | | :white_check_mark:|
-|Crear post, con descriopcion de 500 caracrteres | | | :white_check_mark:|
-|Crear post, con metadata superior a 300 caracteres | | | :white_check_mark:|
-|Crear post, con metadata url no valida | | | :white_check_mark:|
-|Editar post, con titulo mayor a 255 caracteres | | | :white_check_mark:|
-|Editar perfil, con url de twitter | | | :white_check_mark:|
-|Editar page, con titulo con mas de 255 caracteres | | | :white_check_mark:|
-|Editar miembro, con nombre de mas de 191 caracteres | | | :white_check_mark:|
+|Crear tag, solo con titulo| | | :white_check_mark:|
+|Crear tag, solo con titulo mayor a 191 caracteres| | | :white_check_mark:|
+|Crear tag, error al crear solo con  titulo, slug y descripcion | | | :white_check_mark:|
+|Crear tag, con hexadecimal invalido | | | :white_check_mark:|
+|Crear tag, con descriopcion de 500 caracrteres | | | :white_check_mark:|
+|Crear tag, con metadata superior a 300 caracteres | | | :white_check_mark:|
+|Crear tag, con metadata url no valida | | | :white_check_mark:|
+|Editar tag, con titulo mayor a 255 caracteres | | | :white_check_mark:|
+|crear post, solo con titulo | :white_check_mark:| | :white_check_mark:|
+|crear post, solo con cuerpo | :white_check_mark:| | :white_check_mark:|
+|crear post, solo con titulo mayor a 255 caracteres| :white_check_mark:| | :white_check_mark:|
 
 ## Instrucciones de ejecución Cypress
 
