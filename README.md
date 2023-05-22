@@ -180,7 +180,7 @@ en primera parte,  instalar la version mas reciente 5.45.1, con el comando `ghos
 
 Posteriormente clonar este repositorio, instalar las dependencias con `npm install`, Luego ejecutar el comando `cypress open`, ya en la interfaz, cargar la carpeta del proyecto cypress con puebas e2e. y ejecutar las pruebas que se encuentre en el a carpeta cypress\e2e\testGhost V5,  alli se encuentran 2 archivos, el de las pruebas aleatorias y apriori.
 
-Nota* hay casos de pruebas que dan error, sin embaro en la seccion de Issues se describe el porque suceden errores en la prueba
+Nota* hay casos de pruebas que dan error y se marcaron con un prefijo de "ISSUE:" dado que hay escenarios donde depende el caracter lo toma o no, sin embaro en la seccion de Issues se describe el porque suceden errores en la prueba. [Issues](https://github.com/joancolina819/pruebasS7/issues)
 
 
 ### Estrategia Datos Aleatorios
