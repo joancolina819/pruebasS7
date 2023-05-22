@@ -72,7 +72,7 @@ En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios
 
 ### Estrategia Datos Aleatorios
 
-Para la definición de los data pools hicimos uso de la librería @faker-js/faker, la cual genera cadenas de caractéres aleatorios y soporta los siguientes tipos.
+Para la definición de los data pools se uso la librería @faker-js/faker, la cual genera cadenas de caractéres aleatorios y soporta los siguientes tipos.
 
 * Name
 * Number
@@ -81,7 +81,7 @@ Para la definición de los data pools hicimos uso de la librería @faker-js/fake
 * String Date
 * URL
 
-Con esta librería que ofrece Kraken nos permite generar datos en el momento de la ejecución de la prueba, de esta manera en los dferentes escenarios generabamos cadenas de tipo usuario, correo, descripciones, etc. En los archivos .feature donde ejecutabamos el patron Given, When, Then, incluíamos esas variables para genrar el contenido de esta manera.
+Con esta librería que ofrece Kraken permite generar datos en el momento de la ejecución de la prueba, de esta manera en los diferentes escenarios se generan cadenas de tipo usuario, correo, descripciones, etc. En los archivos .feature donde ejecutamos el patron Given, When, Then, incluimos esas variables para genrar el contenido de esta manera.
 ```
 @user1 @web
 Scenario: Crear nuevo usuario con nombre y correo aleatorio
@@ -93,9 +93,25 @@ Scenario: Crear nuevo usuario con nombre y correo aleatorio
   And I wait for 2 seconds
   Then I click save member
 ```
-
+las variables $name_1 y $email_1 genenran datos aleatorios. 
 
 ### Estrategia Datos Pseudo Aleatorios
+
+Para la definición de los data pools se uso la librerá faker para la generación de datos aleatorios.
+
+Esta estrategia genera los datos en línea de forma aleatoria pero con sentido y de manera controlada, por lo tanto se uso el escenario cambiar en el perfil el nombre, slug y correo debido a que los campos de nombre y correo están relacionados, es decir el correo generado debe tener sentido con el nombre que se genera de manera aleatoria. Por ejemplo si el nombre aleatorio que se crea es Pepito Perez, se debe generar un correo tipo pepitoperez@gmail.com. 
+
+En los archivos .feature donde ejecutamos el patron Given, When, Then, incluimos que cuando se ejecutará el paso de 'When I enter new correo seudo", en el archivo de step.js se ejecute el siguiente código.
+
+```
+When('I enter new correo seudo {kraken-string}', async function(text) {
+    let element = await this.driver.$('#user-email');
+    let email =faker.internet.email()
+    const truEmail = text+email.split('@')[1]
+    return await element.setValue(truEmail);
+})
+```
+De esta manera controlamos que el correo final esté relacionado con el nombre y correo que se ejecutaron con datos aleatorios. 
 
 ### Estrategia Datos A-piori
 
