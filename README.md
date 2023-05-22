@@ -200,3 +200,6 @@ Se utilizo la herramienta online Mockaroo que permite congifurar un data pool en
 Esto se integro mediante un archivo Json que se guardo en la carpeta fixture, desde las pruebas cypress se toma el json, se lee, y leatoriamente se toma un registr, guardando en variables globales los datos y asi utilizar estos datos en cada prueba.  
 
 ## Reporte de Incidencias
+
+Se reportan 10 incidencias en los [Issues](https://github.com/joancolina819/pruebasS7/issues)
+
