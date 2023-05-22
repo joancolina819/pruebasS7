@@ -70,6 +70,8 @@ En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios
 
 ### Instrucción Datos Pseudo Aleatorios y A-piori
 
+En la carpeta Pruebas e2e Kraken Psuedo Aleatorios y A-priori/features, se encuentran cinco archivos, cada uno con los escenarios descritos en la tabla anterior. Para ejecutar cada uno de los escenarios es necesario tener creado un usuario e Ghost y configurar el usuario y contraseña en el archivo properties, en la seccion de username y pasword. Es necesario teiner Ghost corriendo en la version mencionada en este documento y tener kraken instalado. Por último ir por consola a la carpeta raíz del proyecto y ejecutar el comando npx kraken-node run.
+
 ## Estrategias usadas
 
 ### Estrategia Datos Aleatorios
