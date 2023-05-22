@@ -118,4 +118,61 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 ## Reporte de Incidencias
 
 
+## Pruebas en cypress
+
+| Escenario | Datos a-priori | Datos (pseudo) aleatorio dinámico | Datos aleatorios | 
+| --- | --- | --- | --- |
+| Iniciar sesión, con email incorrecto | :white_check_mark:| | :white_check_mark:|
+| Iniciar sesión, con email que contiene caracteres especiales | :white_check_mark:| | |
+| Iniciar sesión, con email con correo mayor a 260 caracteres | :white_check_mark:| | |
+| Iniciar sesión, con contraseña incorrecta | :white_check_mark:| | :white_check_mark:|
+|crear pages, solo con titulo | :white_check_mark:| | :white_check_mark:|
+|crear pages, solo con titulo que contiene caracteres especiales| :white_check_mark:| | |
+|crear pages, solo con body sin titulo | :white_check_mark:| | :white_check_mark:|
+|crear pages, solo con body que contenga caracteres especiales sin titulo | :white_check_mark:| | |
+|crear pages, con titulo y cuerpo que contenga caracteres especiales | :white_check_mark:| | |
+|crear pages, solo con titulo mayor a 300 caracteres | :white_check_mark:| | |
+|crear pages, body y titulo | :white_check_mark:| | :white_check_mark:|
+|Editar Pages, a titulo de 300 caracteres | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de nombre largo | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de email invalido | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de la url invalida | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de la url invalida por tamaño de 100 caracteres | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de la url diferente a facebook | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de la url diferente a twittwe | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de la bio larga | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de ingresando solo la contraseña | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de ingresando solo la nueva contraseña | :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de ingresando solo la contraseña incorrecta| :white_check_mark:| | :white_check_mark:|
+|Editar perfil, error de ingresando una contraseña distinta en la confirmacion| :white_check_mark:| | :white_check_mark:|
+|Crear miembro, error por nombre de mas de 191 caracteres| :white_check_mark:| | :white_check_mark:|
+|Crear miembro, exito al guardar miembro| :white_check_mark:| | :white_check_mark:|
+|Crear miembro, error por correo superior a 260 caracteres| :white_check_mark:| | :white_check_mark:|
+|Crear miembro, nota mayor a 500 caracteres| :white_check_mark:| | :white_check_mark:|
+|Editar miembro, ingresando nombre con mas de 300 caracteres| :white_check_mark:| | :white_check_mark:|
+|Editar miembro, ingresando correo invalido | :white_check_mark:| | :white_check_mark:|
+|Editar miembro, ingresando nota larga| :white_check_mark:| | :white_check_mark:|
+|Crear post, solo con titulo| | | :white_check_mark:|
+|Crear post, solo con titulo mayor a 191 caracteres| | | :white_check_mark:|
+|Crear post, error al crear solo con  titulo, slug y descripcion | | | :white_check_mark:|
+|Crear post, con hexadecimal invalido | | | :white_check_mark:|
+|Crear post, con descriopcion de 500 caracrteres | | | :white_check_mark:|
+|Crear post, con metadata superior a 300 caracteres | | | :white_check_mark:|
+|Crear post, con metadata url no valida | | | :white_check_mark:|
+|Editar post, con titulo mayor a 255 caracteres | | | :white_check_mark:|
+|Editar perfil, con url de twitter | | | :white_check_mark:|
+
+## Instrucciones de ejecución Kraken
+
+Prerrequisitos:
+
+en primera parte,  instalar la version mas reciente 5.45.1, con el comando `ghost install --version 5.42.1 --local --force` y crear una cuenta con las estas credenciales e.tijaro@uniandes.edu.co y contraseña Contrasena_123.
+
+Posteriormente clonar este repositorio, instalar las dependencias con `npm install`, Luego ejecutar el comando `cypress open`, ya en la interfaz, cargar la carpeta del proyecto cypress con puebas e2e. y ejecutar las pruebas que se encuentre en el a carpeta cypress\e2e\testGhost V5,  alli se encuentran 2 archivos, el de las pruebas aleatorias y apriori.
+
+Nota* hay casos de pruebas que dan error, sin embaro en la seccion de Issues se describe el porque suceden errores en la prueba
+
+
+
+
 
