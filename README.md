@@ -1,6 +1,6 @@
 # Proyecto Pruebas automatizadas - Semana 7
 
-# Pruebas e2e Kraken y Cypress con (i) pool de datos a-priori, (ii) pool de datos (pseudo) aleatorio dinámico y (iii) escenario aleatorio.
+## Pruebas e2e Kraken y Cypress con (i) pool de datos a-priori, (ii) pool de datos (pseudo) aleatorio dinámico y (iii) escenario aleatorio.
 
 Pruebas E2E Kraken Cypress Grupo 28
 
