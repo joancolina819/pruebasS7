@@ -161,6 +161,8 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 |Crear post, con metadata url no valida | | | :white_check_mark:|
 |Editar post, con titulo mayor a 255 caracteres | | | :white_check_mark:|
 |Editar perfil, con url de twitter | | | :white_check_mark:|
+|Editar page, con titulo con mas de 255 caracteres | | | :white_check_mark:|
+|Editar miembro, con nombre de mas de 191 caracteres | | | :white_check_mark:|
 
 ## Instrucciones de ejecución Cypress
 
