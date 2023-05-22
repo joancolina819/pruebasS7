@@ -189,6 +189,6 @@ Con esta librería se generan datos en el momento de la ejecución de la prueba,
 
 Se utilizo la herramienta online Mockaroo que permite congifurar un data pool en formato json con las caracteristicas requeridas para probar el sistema, como un campo de caracteres especiales y los tamaños de los datos, ademas permite duplicar o llamar los datos de otras columnas para concatenarlas, ademas tiene una interfaz sencilla de manejar, y una generacion de datos por IA que agiliza el trabajo de tipado de datos. en su mayoria se usaron de tipo word, nombres, contraseñas y especial.
 
-
+Esto se integro mediante un archivo Json que se guardo en la carpeta fixture, desde las pruebas cypress se toma el json, se lee, y leatoriamente se toma un registr, guardando en variables globales los datos y asi utilizar estos datos en cada prueba.  
 
 
