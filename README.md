@@ -162,7 +162,7 @@ De esta manera controlamos que el correo final esté relacionado con el nombre y
 |Editar post, con titulo mayor a 255 caracteres | | | :white_check_mark:|
 |Editar perfil, con url de twitter | | | :white_check_mark:|
 
-## Instrucciones de ejecución Kraken
+## Instrucciones de ejecución Cypress
 
 Prerrequisitos:
 
@@ -172,6 +172,22 @@ Posteriormente clonar este repositorio, instalar las dependencias con `npm insta
 
 Nota* hay casos de pruebas que dan error, sin embaro en la seccion de Issues se describe el porque suceden errores en la prueba
 
+
+### Estrategia Datos Aleatorios
+Para la definición de los data pools se uso la librería @faker-js/faker, la cual genera cadenas de caractéres aleatorios y soporta los siguientes tipos.
+
+* Name
+* Number
+* Email
+* String
+* String Date
+* URL
+
+Con esta librería se generan datos en el momento de la ejecución de la prueba, de esta manera en los diferentes escenarios se generan cadenas de tipo texton numero, url, entre otras que permite ingresar datos en los escenarios de usuario, correo, descripciones, etc.
+
+### Estrategia Datos A-piori
+
+Se utilizo la herramienta online Mockaroo que permite congifurar un data pool en formato json con las caracteristicas requeridas para probar el sistema, como un campo de caracteres especiales y los tamaños de los datos, ademas permite duplicar o llamar los datos de otras columnas para concatenarlas, ademas tiene una interfaz sencilla de manejar, y una generacion de datos por IA que agiliza el trabajo de tipado de datos. en su mayoria se usaron de tipo word, nombres, contraseñas y especial.
 
 
 
