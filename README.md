@@ -72,7 +72,9 @@ En la carpeta Pruebas e2e Kraken Aleatorios/features/Escenarios Datos Aleatorios
 
 ### Estrategia Datos Aleatorios
 
-### Estrategia Datos Pseudo Aleatorios y A-piori
+### Estrategia Datos Pseudo Aleatorios
+
+### Estrategia Datos A-piori
 
 ## Reporte de Incidencias
 
